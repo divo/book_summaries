@@ -13,6 +13,13 @@ This repository contains structured markdown summaries of technical books. Each 
 pandoc sre/chapter-*.md -o sre.pdf --toc --metadata title="Site Reliability Engineering - Book Summary"
 ```
 
+### Generate PDF with note-taking margins
+```bash
+pandoc sre/chapter-*.md -o sre.pdf --toc \
+  --metadata title="Site Reliability Engineering - Book Summary" \
+  -V geometry:"left=1.5cm, right=6cm, top=2cm, bottom=2cm"
+```
+
 Requires Pandoc and a LaTeX distribution:
 ```bash
 brew install pandoc
