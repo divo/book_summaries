@@ -17,7 +17,7 @@ pandoc sre/chapter-*.md -o sre.pdf --toc --metadata title="Site Reliability Engi
 ```bash
 pandoc sre/chapter-*.md -o sre.pdf --toc \
   --metadata title="Site Reliability Engineering - Book Summary" \
-  -V geometry:"left=1.5cm, right=6cm, top=2cm, bottom=2cm"
+  -V geometry:"left=1.5cm, right=9cm, top=2cm, bottom=2cm"
 ```
 
 Requires Pandoc and a LaTeX distribution:
